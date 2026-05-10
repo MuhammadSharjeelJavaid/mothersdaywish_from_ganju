@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dear Mama, I Haven&apos;t Met You Yet...</title>
+  <meta name="description" content="A Mother&apos;s Day tribute for Maham from her little boy">
+  <meta property="og:title" content="Dear Mama, I Haven&apos;t Met You Yet...">
+  <meta property="og:description" content="A Mother&apos;s Day tribute for Maham from her little boy">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="ganju.png">
+  <meta name="theme-color" content="#edf7ff">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <audio id="bgm" src="bgm.mp3" preload="auto" loop></audio>
+
+  <div class="soft-bg" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section id="opening" class="opening" aria-labelledby="openingTitle">
+    <div class="opening-card">
+      <p class="tiny-label">A tiny message from inside</p>
+      <h1 id="openingTitle">Hi Mama... it&apos;s me.</h1>
+      <p class="opening-line">I&apos;m growing well inside you</p>
+      <div class="heartbeat" aria-hidden="true">
+        <svg viewBox="0 0 320 72" role="img">
+          <path d="M4 38 H75 L92 38 L105 18 L125 58 L145 24 L164 38 H316" />
+        </svg>
+      </div>
+      <p class="opening-subtitle">I haven&apos;t met you yet, but I already know your love.</p>
+      <button id="beginBtn" class="btn primary" type="button">Read my letter</button>
+      <p id="audioHint" class="hint" aria-live="polite">Tap to begin the letter and music.</p>
+    </div>
+  </section>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Pause music" aria-pressed="true" hidden>
+    <span aria-hidden="true">♪</span>
+  </button>
+  <p id="audioToast" class="audio-toast" role="status" aria-live="polite" hidden></p>
+
+  <main id="main" aria-hidden="true">
+    <section class="section hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="tiny-label">For Maham</p>
+          <p class="baby-boy-pill inline">Little boy loading...</p>
+          <h2>Dear Mama, I Haven&apos;t Met You Yet...</h2>
+          <p class="subtitle">A little Mother&apos;s Day letter from your baby boy</p>
+          <p>Hi Mama,</p>
+          <p>It&apos;s me, your little boy.</p>
+          <p>I&apos;m still tiny, still growing, still hidden away in my little world, but I already know so much about you. I know your warmth. I know your heartbeat. I know your care.</p>
+          <p>And even though I haven&apos;t met you yet, I already know that I am deeply loved.</p>
+        </div>
+        <figure class="scan-card reveal image-shell">
+          <img src="ganju.png" alt="Dating scan image of Maham and Baba&apos;s baby boy" fetchpriority="high">
+          <figcaption>Currently tiny. Already loved. Definitely a little prince in progress.</figcaption>
+          <span class="image-fallback">Dating scan image</span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section known">
+      <div class="wrap">
+        <div class="section-title reveal">
+          <p class="tiny-label">What I Already Know</p>
+          <p class="baby-boy-pill inline">Reports from inside Mama</p>
+          <h2>I am learning you before I meet you</h2>
+        </div>
+        <div class="bubble-grid">
+          <article class="bubble reveal">I already know your voice.</article>
+          <article class="bubble reveal">I already know your love feels safe.</article>
+          <article class="bubble reveal">I know you carry me before even meeting me.</article>
+          <article class="bubble reveal">I know Baba annoys you, but he loves you a lot.</article>
+          <article class="bubble reveal">I know you are beautiful, strong, and soft-hearted.</article>
+          <article class="bubble reveal">I know your love found me before my eyes ever found you.</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section letter-section">
+      <div class="wrap narrow">
+        <article class="letter-card reveal">
+          <p class="tiny-label">My Letter to Mama</p>
+          <p class="baby-boy-pill inline">Written before my first tiny outfit</p>
+          <h2>My Letter to Mama</h2>
+          <p>Dear Mama,</p>
+          <p>I haven&apos;t met you yet, but I already belong to you.</p>
+          <p>Before I ever opened my eyes, I was already surrounded by your care.<br>Before I ever spoke a word, I was already known by your heart.<br>Before I ever touched your hand, you were already carrying me with love.</p>
+          <p>Thank you for carrying me before even meeting me.</p>
+          <p>Thank you for protecting me, loving me, and making space for me in your life.</p>
+          <p>I am growing fast, but one thing has already grown to infinity:<br>I already love you, my Mama, just as much as my Baba loves you, maybe a little less. Because he loves you a lot.</p>
+          <p>And yes, Baba told me he can be dramatic sometimes. I believe him.</p>
+          <p class="signature">Happy Mother&apos;s Day, Mama.<br>Love, your little boy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section certificate-section">
+      <div class="wrap narrow">
+        <article id="certificate" class="certificate reveal">
+          <p class="tiny-label">Official Baby Document</p>
+          <p class="baby-boy-pill inline">Certified by your baby boy</p>
+          <h2>Certificate of Pre-Motherhood Excellence</h2>
+          <div class="certificate-line">
+            <span>Awarded to</span>
+            <strong>My Mama, my dad&apos;s Snail</strong>
+          </div>
+          <div class="certificate-list">
+            <p>For carrying me safely</p>
+            <p>For loving me before seeing me</p>
+            <p>For surviving Baba&apos;s dramatic overthinking</p>
+            <p>For being beautiful, strong, and soft-hearted</p>
+          </div>
+          <p class="issued">Issued by: Baby SJ, currently residing inside Mama.</p>
+          <button id="printCertificate" class="btn ghost" type="button">Print Certificate</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section kick-section">
+      <div class="wrap">
+        <div class="section-title reveal">
+          <p class="tiny-label">Tiny Interactive Report</p>
+          <p class="baby-boy-pill inline">Small feet, big feelings</p>
+          <h2>Tap the Kicks</h2>
+          <p>Sometimes I kick to say something. Tap the little kicks and see what I&apos;m trying to tell you.</p>
+        </div>
+        <div class="kick-panel reveal">
+          <div class="kick-top">
+            <span id="kickProgress">Kicks tapped: 0 / 5</span>
+            <button id="resetKicks" class="mini-btn" type="button">Restart</button>
+          </div>
+          <div id="kickArea" class="kick-area" aria-label="Tap the glowing baby kicks" role="group"></div>
+          <div id="kickMessages" class="kick-messages" aria-live="polite"></div>
+          <div id="kickFinal" class="final-card" hidden>
+            <strong>Happy Mother&apos;s Day, Mama.</strong>
+            <span>I can&apos;t wait to meet you.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section report-section">
+      <div class="wrap narrow">
+        <article class="report-card reveal">
+          <p class="small-joke">Mama, Baba has given me your official report using Ilham. He is so funny :D</p>
+          <h2>Motherhood Readiness Evaluation Report</h2>
+          <dl>
+            <div><dt>Beauty</dt><dd>10/10</dd></div>
+            <div><dt>Cuteness</dt><dd>11/10</dd></div>
+            <div><dt>Emotional blackmail power</dt><dd>99/10</dd></div>
+            <div><dt>Baby protection instinct</dt><dd>Already activated</dd></div>
+            <div><dt>Tolerance for Baba</dt><dd>Under severe testing</dd></div>
+          </dl>
+          <div class="verdict">
+            <span>Final Verdict</span>
+            <p>Maham is hereby declared ready to be the most loving mama.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section already-mama">
+      <div class="wrap split">
+        <figure class="scan-card small reveal image-shell">
+          <img src="ganju.png" alt="Dating scan image showing the baby growing inside Maham" loading="lazy">
+          <figcaption>Proof that I am already taking up space in your heart.</figcaption>
+          <span class="image-fallback">Dating scan image</span>
+        </figure>
+        <div class="reveal">
+          <p class="tiny-label">Why You&apos;re Already My Mama</p>
+          <h2>You became Mama before I arrived</h2>
+          <p>You loved me before you held me.</p>
+          <p>You protected me before you saw me.</p>
+          <p>You made room for me in your world before I arrived in it.</p>
+          <p>You are already my Mama, not because I was born, but because you already love me like a mother.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing">
+      <div class="wrap narrow reveal">
+        <p>Mama,</p>
+        <p>I may still be on my way.<br>I may still be growing quietly.<br>I may still be a little mystery.</p>
+        <p>But one thing is certain:<br>I am already lucky.</p>
+        <p>Lucky to have you.<br>Lucky to grow with your love around me.<br>Lucky to call you Mama.</p>
+        <h2>Happy Mother&apos;s Day, Mama.</h2>
+        <p>Love,<br>Your little boy</p>
+        <p class="ps">P.S. Please keep carrying me, loving me, and occasionally feeding my biryani requests.</p>
+        <button id="hugBtn" class="btn primary" type="button">Tap for one more hug</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="hugPopup" class="hug-popup" role="dialog" aria-live="polite" aria-label="Hug message" hidden>
+    <p>One big invisible hug from your little boy.</p>
+    <button id="closeHug" class="mini-btn" type="button">Keep it forever</button>
+  </div>
+
+  <div id="celebrationLayer" class="celebration-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
